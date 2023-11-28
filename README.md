@@ -1,7 +1,7 @@
 # OpenAi Assistants API Experiments
 My experiments with the OpenAi Assistants API
 
-These experiments use Javascript to interact with the OpenAi API. This is because Javascript web apps can be run from the desktop by simply double clicking the index.html file. This is ideal when building assistants (i.e. ChatGPT chatbots) for your own personal use.
+These experiments use Javascript and Php to interact with the OpenAi API. This makes it possible to host a web app Assistant on a low cost shared server, because shared servers have Php pre-installed. When using Python, for example, one would need to rent a server and then install Python on it. That server is a lot more expensive and takes a more work to set up and maintain.
 
 <br>
 
@@ -10,6 +10,9 @@ These experiments use Javascript to interact with the OpenAi API. This is becaus
 
 - Exp_01 Simple Javascript Code to Create an Assistant<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_01-Simple-Javascript-Code-to-Create-Assistant
+
+- Exp_02 - Javascript code to List all assistants and Delete an assistant<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_02-List-and-Delete-Assistants-Javascript
 
 <br>
 
