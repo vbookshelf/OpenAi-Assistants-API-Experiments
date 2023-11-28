@@ -1,4 +1,4 @@
-# OpenAi Assistants API Experiments
+# OpenAi Assistants API Experiments - Javascript and Php
 My experiments with the OpenAi Assistants API
 
 These experiments use Javascript and Php to interact with the OpenAi API. This makes it possible to host a web app Assistant on a low cost shared server, because shared servers have Php pre-installed. When using Python, for example, one would need to rent a server and then install Python on it. That server is a lot more expensive and takes a more work to set up and maintain.
