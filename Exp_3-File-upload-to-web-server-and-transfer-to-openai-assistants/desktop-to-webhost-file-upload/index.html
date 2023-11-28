@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body>
+	
+	<p>This web app, including Javascript and php files, must be on the server for the upload to work.<br>
+		You will first need to create a folder called 'upoads' on the server, or the upload won't work.<br>
+	After upload is completed, you may need to close and reopen Filezilla before the uploaded file will
+appear in the folder called 'uploads'.</p>
+
+
+    <h1>File Upload from Desktop to Web Server</h1>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
