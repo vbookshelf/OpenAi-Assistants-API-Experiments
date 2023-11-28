@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript - Assistants API</title>
+</head>
+
+<body>
+	
+<h2>Javascript - OpenAi Assistants API</h2>
+	
+
+<h2>Assistant</h2>
+
+
+<button onclick="createAssistant()">Create</button>
+<div id="new-assistant-id">
+	---
+</div>
+
+<button onclick="listAssistants()">List</button>
+<div id="num-assistants">
+	---
+</div>
+<div id="chatgpt-response">
+	---
+</div>
+
+
+<button onclick="deleteAssistant()">Delete</button>
+<div id="del-assistant-id">
+	---
+</div>
+
+</body>
+</html>
+
+
+<script>
+	
+//=====================
+// CREATE AN ASSISTANT
+//=====================
+	
+// This is where to view all your created assistants on OpenAi
+// https://platform.openai.com/assistants
+	
+const apiKey = 'Your-API-Key; // replace with your OpenAI API key
+
+const openai_url = 'https://api.openai.com/v1/assistants';
+const model_type = "gpt-4-1106-preview";
+
+const name = "JSTest Assistant";
+const tools = [{"type": "code_interpreter"}, {"type": "retrieval"}];
+
+const instructions = "You are a personal math tutor. When asked a question, write and run Python code to answer the question.";
+
+
+let new_assistant_id;
+	
+async function createAssistant() {
+	
+	
+  try {
+	  
+	
+    const response = await fetch(openai_url, {
+      method: 'POST',
+      headers: {
+		Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+		'OpenAI-Beta': 'assistants=v1'
+      },
+      body: JSON.stringify({
+		  name: name,
+		  tools: tools,
+		 model: model_type,
+		 instructions: instructions,
+      })
+    })
+
+    const data = await response.json();
+	
+	// Get the assistant id from the response text
+	const response_text = data['id']; //data['choices'][0]['message']['content'];
+	
+	new_assistant_id = data['id'];
+	
+    console.log(data);
+	
+	 // Write the message into a div that has the id ajax-response
+	 document.getElementById("new-assistant-id").innerHTML = response_text;
+	
+  } catch (error) {
+    console.error(error);
+  }
+  
+}
+
+
+
+//=====================
+// LIST ALL ASSISTANTS
+//=====================
+
+// This will delete the assistant that you just created.
+// Therefore, first click the 'Create' button before
+// clicking the 'Delete' button.
+
+
+// Get a list of all the id values
+let idValues;
+
+
+async function listAssistants() {
+	
+	
+	console.log('Working...');
+	
+  try {
+	
+    const response = await fetch(openai_url, {
+      method: 'GET',
+      headers: {
+		Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+		'OpenAI-Beta': 'assistants=v1'
+      }
+	  
+  })
+
+    const data = await response.json();
+	
+	// Get the assistant id from the response text
+	const response_text = data['data'].length;
+	
+    console.log(data['data'].length);
+	
+	
+	
+	// Get the names of all assistants
+	let resultString = '';
+	
+	for (let i = 0; i < data['data'].length; i++) {
+	  const currentValue = data['data'][i].id;
+	  
+	  // Concatenate the current value to the result string with a comma
+	  resultString += currentValue;
+	
+	  // Add a comma if it's not the last element
+	  if (i < data['data'].length - 1) {
+	    resultString += ', ';
+	  }
+	}
+	
+	
+	// Get a list of all the id values.
+	// These list is available globally.
+	idValues = [];
+
+	for (let i = 0; i < data['data'].length; i++) {
+	  idValues.push(data['data'][i].id);
+	}
+	
+	
+	//console.log(idValues[0])
+	
+	 // Write the message into a div that has the id ajax-response
+	 document.getElementById("num-assistants").innerHTML = data['data'].length;
+	 document.getElementById("chatgpt-response").innerHTML = resultString;
+	
+  } catch (error) {
+    console.error(error);
+  }
+  
+}
+
+
+
+
+
+//=====================
+// DELETE AN ASSISTANT
+//=====================
+
+// The listAssistants() function must be run (to update the idvalues list)
+// each time before this function can be run.
+
+async function deleteAssistant() {
+	
+	
+	// The id of the assistant to be deleted needs to be added to this url
+	const del_url = openai_url + '/' + new_assistant_id;
+	
+	
+	console.log('Working...');
+	//console.log(idValues);
+	
+  try {
+	
+    const response = await fetch(del_url, {
+      method: 'DELETE',
+      headers: {
+		Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+		'OpenAI-Beta': 'assistants=v1'
+      }
+	  
+  })
+
+    const data = await response.json();
+	
+	// Get the assistant id from the response text
+	const response_text = data['id']; //data['id']; //data['choices'][0]['message']['content'];
+	
+    console.log(data['id']);
+	
+	
+	
+	 // Write the message into a div that has the id ajax-response
+	 document.getElementById("del-assistant-id").innerHTML = data['id'];
+	 
+	
+  } catch (error) {
+    console.error(error);
+  }
+  
+}
+	
+</script>
+
+
