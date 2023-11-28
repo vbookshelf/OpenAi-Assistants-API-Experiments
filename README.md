@@ -10,7 +10,7 @@ These experiments use Javascript and Php to interact with the OpenAi API. This m
 ## Experiments
 <br>
 
-- Exp_01 Simple Javascript Code to Create an Assistant<br>
+- Exp_01 - Simple Javascript Code to Create an Assistant<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_01-Simple-Javascript-Code-to-Create-Assistant
 
 - Exp_02 - Javascript code to List all assistants and Delete an assistant<br>
