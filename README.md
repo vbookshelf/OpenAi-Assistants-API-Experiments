@@ -29,3 +29,9 @@ https://platform.openai.com/docs/api-reference/assistants
 
 - Assistants API Tools Docs<br>
 https://platform.openai.com/docs/assistants/tools
+
+- Link to view all created assistants on OpenAi<br>
+https://platform.openai.com/assistants
+
+- OpenAi File upload docs<br>
+https://platform.openai.com/docs/api-reference/files/create
