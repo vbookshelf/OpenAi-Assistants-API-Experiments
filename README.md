@@ -16,6 +16,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_01
 - Exp_02 - Javascript code to List all assistants and Delete an assistant<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_02-List-and-Delete-Assistants-Javascript
 
+- Exp_03 - Upload File to Web Server and then transfer to OpenAi Assistants<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_3-File-upload-to-web-server-and-transfer-to-openai-assistants
+
 <br>
 
 ## Resources
