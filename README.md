@@ -22,6 +22,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_3-
 - Exp_04 - Simple Php Code to Create an Assistant<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_04-Simple-Php-Code-to-Create-an-Assistant
 
+- Exp_05 - Php code to List all assistants and Delete an assistant<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_05-Php-code-to-list-all-assistants-and-delete-an-assistant
+
 <br>
 
 ## Resources
