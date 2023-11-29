@@ -1,4 +1,4 @@
-## Exp_03 - File upload to Web Server and then transfer to OpenAi Assistants
+## Exp_03 - Upload File to Web Server and then transfer to OpenAi Assistants
 <br>
 
 ### Objective
