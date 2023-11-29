@@ -25,6 +25,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_04
 - Exp_05 - Php code to List all assistants and Delete an assistant<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_05-Php-code-to-list-all-assistants-and-delete-an-assistant
 
+- Exp_06 - Upload File to OpenAi in one click<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_06-Upload-file-to-openai-in-one-click
+
 <br>
 
 ## Resources
