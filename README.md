@@ -19,6 +19,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_02
 - Exp_03 - Upload File to Web Server and then transfer to OpenAi Assistants<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_3-File-upload-to-web-server-and-transfer-to-openai-assistants
 
+- Exp_04 - Simple Php Code to Create an Assistant<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_04-Simple-Php-Code-to-Create-an-Assistant
+
 <br>
 
 ## Resources
