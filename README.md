@@ -37,6 +37,10 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_08
 - Exp_09 - Create a Message<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_09-Create-a-message
 
+- Exp_10 - Retrieve a Thread<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_10-Retrieve-a-thread
+
+
 <br>
 
 ## Resources
@@ -70,3 +74,6 @@ https://platform.openai.com/docs/api-reference/threads/createThread
 
 - OpenAi 'Create Message' docs<br>
 https://platform.openai.com/docs/api-reference/messages/createMessage
+
+- OpenAi 'Retrieve Thread' docs<br>
+https://platform.openai.com/docs/api-reference/threads/getThread
