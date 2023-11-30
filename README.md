@@ -28,6 +28,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_05
 - Exp_06 - Upload File to OpenAi in one click<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_06-Upload-file-to-openai-in-one-click
 
+- Exp_07 - Attach a File to an Assistant<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_07-Attach-a-file-to-an-assistant
+
 <br>
 
 ## Resources
