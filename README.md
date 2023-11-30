@@ -43,6 +43,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_10
 - Exp_11 - Retrieve a Run<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_11-Retrieve-a-run
 
+- Exp_12 - List all messages on a thread<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_12-List-all-messages-on-a-thread
+
 
 <br>
 
@@ -83,3 +86,6 @@ https://platform.openai.com/docs/api-reference/threads/getThread
 
 - OpenAi 'Retrieve Run' docs<br>
 https://platform.openai.com/docs/api-reference/runs/getRun
+
+- OpenAi 'List Messages' docs<br>
+https://platform.openai.com/docs/api-reference/messages/listMessages
