@@ -46,6 +46,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_11
 - Exp_12 - List all messages on a thread<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_12-List-all-messages-on-a-thread
 
+- Exp_13 - Run a thread<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_13-Run-a-thread
+
 
 <br>
 
@@ -89,3 +92,10 @@ https://platform.openai.com/docs/api-reference/runs/getRun
 
 - OpenAi 'List Messages' docs<br>
 https://platform.openai.com/docs/api-reference/messages/listMessages
+
+- OpenAi 'Create Run' docs<br>
+https://platform.openai.com/docs/api-reference/runs/createRun
+
+- OpenAi 'How Assistants work' docs<br>
+This explains what happens when a thread is run.<br>
+https://platform.openai.com/docs/assistants/how-it-works/agents
