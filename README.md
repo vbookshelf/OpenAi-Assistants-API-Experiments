@@ -55,3 +55,6 @@ https://platform.openai.com/docs/api-reference/files/create
 
 - View all uploaded files on OpenAi<br>
 https://platform.openai.com/files
+
+- OpenAi 'Create Assistant File' docs<br>
+https://platform.openai.com/docs/api-reference/assistants/createAssistantFile
