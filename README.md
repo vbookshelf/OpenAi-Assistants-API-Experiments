@@ -31,6 +31,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_06
 - Exp_07 - Attach a File to an Assistant<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_07-Attach-a-file-to-an-assistant
 
+- Exp_08 - Create a Thread<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_08-Create-a-Thread
+
 <br>
 
 ## Resources
@@ -58,3 +61,6 @@ https://platform.openai.com/files
 
 - OpenAi 'Create Assistant File' docs<br>
 https://platform.openai.com/docs/api-reference/assistants/createAssistantFile
+
+- OpenAi 'Create Thread' docs<br>
+https://platform.openai.com/docs/api-reference/threads/createThread
