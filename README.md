@@ -49,6 +49,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_12
 - Exp_13 - Run a thread<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_13-Run-a-thread
 
+- Exp_14 - Upload a file and attach it to an assistant in one click<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_014-Upload-file-and-attach-to-assistant-in-one-click
+
 
 <br>
 
