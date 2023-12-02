@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body>
+
+    <h1>Upload file and attach to assistant in one click</h1>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload</button>
+    <div id="result"></div>
+
+    
+</body>
+</html>
+
+<script>
+	
+// This is the code that handles the file upload. 
+// The file is first uploaded to the webhost.
+// Then php code (upload.php) is used to store the file in a folder called 'uploads'.
+// Then the php code transfers the file from the 'uploads' folder to OpenAi.
+
+function uploadFile() {
+  const fileInput = document.getElementById('fileInput');
+  const file = fileInput.files[0];
+  
+
+  if (file) {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    fetch('upload.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+		
+	// This is the response from the Php code in uploads.php
+	// The 'message' key contains the file id if the transfer to OpenAi was successful.
+	// Refer to the function uploadFileToOpenAI() in upload.php
+      document.getElementById('result').innerHTML = `Status: ${data.message}`;
+	  
+    })
+    .catch(error => {
+      console.error('Error uploading file:', error);
+      document.getElementById('result').innerHTML = 'Error uploading file';
+    });
+	
+  } else {
+    alert('Please select a file to upload.');
+  }
+  
+}	
+	
+</script>
