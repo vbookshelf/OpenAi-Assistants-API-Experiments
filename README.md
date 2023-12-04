@@ -7,6 +7,13 @@ These experiments use Javascript and Php to interact with the OpenAi API. This m
 
 <img src="https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/blob/main/images/ai-7786589_640.png" height="400"></img>
 
+This is the workflow as quoted in the docs:
+
+- Create an Assistant in the API by defining its custom instructions and picking a model. If helpful, enable tools like Code Interpreter, Retrieval, and Function calling.
+- Create a Thread when a user starts a conversation.
+- Add Messages to the Thread as the user ask questions.
+- Run the Assistant on the Thread to trigger responses. This automatically calls the relevant tools.
+
 ## Experiments
 <br>
 
