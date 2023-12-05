@@ -62,6 +62,9 @@ https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_01
 - Exp_15 - Create a working web app that includes file upload<br>
 https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_15-Working-web-app-with-file-upload
 
+- Exp_16 - Create a working web app that includes the uploaded file id in the message<br>
+https://github.com/vbookshelf/OpenAi-Assistants-API-Experiments/tree/main/Exp_16-Web-app-with-uploaded-file-id-included-in-message
+
 
 <br>
 
